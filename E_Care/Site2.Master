@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="E_Care.Site2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+ <style>
+    .heads
+{
+border:2px solid #a1a1a1;
+
+background:#333333;
+width:100%;
+border-radius:150px;
+height:135px
+
+
+}
+    .content
+    {
+
+
+width:100%;
+
+height:500px
+
+
+}
+    .ull
+{
+list-style-type:none;
+margin:5px;
+padding:5px;
+
+}
+.lli
+{
+display:inline;
+padding:5px 20px 5px 20px;
+float:left;
+border-right:1px solid #42432d;
+text-decoration:none;
+font:bold 1em/1em Arial, Helvetica, sans-serif;
+text-transform:uppercase;
+color:white;
+}
+li:hover
+{
+    background-color:#333333;
+    color:#333333;
+    text-decoration:none;
+}
+
+     </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="heads">
+        <div style="height:135px;width:50%;display:inline-block;text-align:center;font-size:xx-large;color:ghostwhite;vertical-align:middle">
+            WELCOME TO ECARE</div>
+           <div style="height:135px; width:30%;display:inline-block;float:right; text-align:center;color: #808080;margin-top:5px">
+         
+              
+               <asp:Button ID="Button2" runat="server" BackColor="#003366" ForeColor="#CCCCCC" Text="Home" Width="65px" OnClick="Button2_Click" />
+               <asp:Label ID="Label1" runat="server" Width="20px"></asp:Label>
+         
+              
+               <asp:Button ID="Button1" runat="server" Text="Settings" BackColor="#FFFF99" BorderStyle="Outset" OnClick="Button1_Click" Width="66px" />
+                  <asp:Label ID="Label2" runat="server" Width="20px"></asp:Label>
+         
+              
+               <asp:Button ID="Button3" runat="server" Text="Log out" BackColor="#009999" BorderStyle="Outset" Height="24px" OnClick="Button3_Click" Width="66px" />
+                  <br />
+               <br />
+               <br />
+               <br />
+           
+        </div>
+     
+    </div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+

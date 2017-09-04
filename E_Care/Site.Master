@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="E_Care.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+ <style>
+    .heads
+{
+border:2px solid #a1a1a1;
+
+background:#333333;
+width:100%;
+border-radius:150px;
+height:135px
+
+}
+    .content
+    {
+
+
+width:100%;
+
+height:500px
+
+
+}
+    .ull
+{
+list-style-type:none;
+margin:5px;
+padding:5px;
+text-decoration:none;
+
+}
+.lli
+{
+display:inline;
+text-decoration:none;
+}
+li:hover
+{
+    background-color:ghostwhite;
+}
+
+     </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="heads">
+        <div style="height:135px;width:50%;display:inline-block;text-align:center;vertical-align:middle;color:ghostwhite;font-size:xx-large">
+            Welcome to E-Care</div>
+           <div style="height:135px; width:30%;display:inline-block;float:right; text-align:center;color: #ffffff;margin-top:5px">
+         
+              
+               <asp:Button ID="Button1" runat="server" Text="Log in" BackColor="#009999" BorderStyle="Outset" ForeColor="White" OnClick="Button1_Click" />
+                  <br />
+               <br />
+               Don't have any account?
+               <br />
+               <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#006666" OnClick="LinkButton1_Click">Sign Up Now</asp:LinkButton>
+               <br />
+           
+        </div>
+     
+    </div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
